@@ -58,32 +58,32 @@ if __name__ == '__main__':
     print(response.status_code, response.reason)
     print(response.text)
 # Transaction hash 
-# %%
-{
-    "tx": {
-        "block_height": -1,
-        "block_index": -1,
-        "hash": "4b68d02dc039be6dabaefe36a66e2b270af196f056785977ec45937a1ce9017d",
-        "addresses": [
-            "zMZxsfvMxyq7yVmxXd3o3GRTNSo65z4UVf",
-            "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
-        ],
-        "total": 3023,
-        "fees": 2000,
-        "size": 232,
-        "vsize": 232,
-        "preference": "low",
-        "relayed_by": "5.117.195.137",
-        "received": "2023-05-25T22:56:35.049471867Z",
-        "ver": 1,
-        "double_spend": False,
-        "vin_sz": 1,
-        "vout_sz": 1,
-        "confirmations": 0,
-        "inputs": [
-            {
-                "prev_hash": "89a47d8ba3c8c80c062bcf308aa655b502ea5abbb327114070fe4769c892ea58",
-            }
-        ]
-    }
-}
+# # %%
+# {
+#     "tx": {
+#         "block_height": -1,
+#         "block_index": -1,
+#         "hash": "4b68d02dc039be6dabaefe36a66e2b270af196f056785977ec45937a1ce9017d",
+#         "addresses": [
+#             "zMZxsfvMxyq7yVmxXd3o3GRTNSo65z4UVf",
+#             "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
+#         ],
+#         "total": 3023,
+#         "fees": 2000,
+#         "size": 232,
+#         "vsize": 232,
+#         "preference": "low",
+#         "relayed_by": "5.117.195.137",
+#         "received": "2023-05-25T22:56:35.049471867Z",
+#         "ver": 1,
+#         "double_spend": False,
+#         "vin_sz": 1,
+#         "vout_sz": 1,
+#         "confirmations": 0,
+#         "inputs": [
+#             {
+#                 "prev_hash": "89a47d8ba3c8c80c062bcf308aa655b502ea5abbb327114070fe4769c892ea58",
+#             }
+#         ]
+#     }
+# }

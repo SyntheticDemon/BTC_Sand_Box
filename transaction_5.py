@@ -35,12 +35,12 @@ def PWPKH_scriptPubKey(public_key):
 
 def send_custom_transaction(amount_to_send, txid_to_spend, utxo_index,
                             ):
-    sub = (11 - 7).to_bytes(1, 'big')
-    sum = (11 + 7).to_bytes(1, 'big')
+    sub = (11 - 7).to_bytes(1, 'little')
+    sum = (11 + 7).to_bytes(1, 'little')
     prime_2 = 11
     prime_1 = 7
-    prime_2 = prime_2.to_bytes(1, 'big')
-    prime_1 = prime_1.to_bytes(1, 'big')
+    prime_2 = prime_2.to_bytes(1, 'little')
+    prime_1 = prime_1.to_bytes(1, 'little')
     custom_scriptPubKey = scriptPubkey(sum, sub)
     txout = create_txout(amount_to_send, custom_scriptPubKey)
     txin_scriptPubKey = PWPKH_scriptPubKey(my_public_key)
@@ -57,7 +57,7 @@ def send_custom_transaction(amount_to_send, txid_to_spend, utxo_index,
 # if __name__ == '__main__':
     ######################################################################
 amount_to_send = 0.00002023
-txid_to_spend = '4b68d02dc039be6dabaefe36a66e2b270af196f056785977ec45937a1ce9017d'
+txid_to_spend = '9eb0350e2e6e47b8f6e9d9a48fbc0f8b3ba7f2cea712228acf4bd30e12a529dc'
 utxo_index = 0  # UTXO index among transaction outputs
 
 ######################################################################
@@ -77,28 +77,28 @@ print(response.text)
 # %%
 print(response.text)
 # %%
-{
-    "tx": {
-        "block_height": -1,
-        "block_index": -1,
-        "hash": "dcef734cf985cc3305118e166e99abf1881c11526623272f543ea9fbce41679c",
-        "addresses": [
-            "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
-        ],
-        "total": 2023,
-        "fees": 1000,
-        "size": 207,
-        "vsize": 207,
-        "preference": "low",
-        "relayed_by": "5.117.195.137",
-        "received": "2023-05-26T07:54:42.774160862Z",
-        "ver": 1,
-        "double_spend": False,
-        "vin_sz": 1,
-        "vout_sz": 1,
-        "confirmations": 0,
-        "inputs": [
-        ]
-    }
+# {
+#     "tx": {
+#         "block_height": -1,
+#         "block_index": -1,
+#         "hash": "dcef734cf985cc3305118e166e99abf1881c11526623272f543ea9fbce41679c",
+#         "addresses": [
+#             "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
+#         ],
+#         "total": 2023,
+#         "fees": 1000,
+#         "size": 207,
+#         "vsize": 207,
+#         "preference": "low",
+#         "relayed_by": "5.117.195.137",
+#         "received": "2023-05-26T07:54:42.774160862Z",
+#         "ver": 1,
+#         "double_spend": False,
+#         "vin_sz": 1,
+#         "vout_sz": 1,
+#         "confirmations": 0,
+#         "inputs": [
+#         ]
+#     }
 
-}
+# }

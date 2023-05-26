@@ -75,33 +75,33 @@ print(response.text)
 
 # %%
 
-{
-    "tx": {
-        "block_height": -1,
-        "block_index": -1,
-        "hash": "89a47d8ba3c8c80c062bcf308aa655b502ea5abbb327114070fe4769c892ea58",
-        "addresses": [
-            "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz",
-            "zMZxsfvMxyq7yVmxXd3o3GRTNSo65z4UVf"
-        ],
-        "total": 5023,
-        "fees": 9700,
-        "size": 400,
-        "vsize": 400,
-        "preference": "low",
-        "relayed_by": "5.117.195.137",
-        "received": "2023-05-25T22:54:14.449084371Z",
-        "ver": 1,
-        "double_spend": False,
-        "vin_sz": 1,
-        "vout_sz": 1,
-        "confirmations": 0,
-        "inputs": [
-            {
-                "prev_hash": "713ec84da8748f0b476a02d2b587a7fc6ad0fb31ce2de8b2a5091c8ed866a1a6",
-            }
-        ]
-    }
-}
+# {
+#     "tx": {
+#         "block_height": -1,
+#         "block_index": -1,
+#         "hash": "89a47d8ba3c8c80c062bcf308aa655b502ea5abbb327114070fe4769c892ea58",
+#         "addresses": [
+#             "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz",
+#             "zMZxsfvMxyq7yVmxXd3o3GRTNSo65z4UVf"
+#         ],
+#         "total": 5023,
+#         "fees": 9700,
+#         "size": 400,
+#         "vsize": 400,
+#         "preference": "low",
+#         "relayed_by": "5.117.195.137",
+#         "received": "2023-05-25T22:54:14.449084371Z",
+#         "ver": 1,
+#         "double_spend": False,
+#         "vin_sz": 1,
+#         "vout_sz": 1,
+#         "confirmations": 0,
+#         "inputs": [
+#             {
+#                 "prev_hash": "713ec84da8748f0b476a02d2b587a7fc6ad0fb31ce2de8b2a5091c8ed866a1a6",
+#             }
+#         ]
+#     }
+# }
 
-# %% 
+# # %% 

@@ -63,8 +63,8 @@ def send_from_P2PKH_transaction(amount_to_send, txid_to_spend, utxo_index,
 
 # if __name__ == '__main__':
     ######################################################################
-amount_to_send = 0.001
-txid_to_spend = '2a048df915fbb5edb3eb5ad07b6c722fa30520cefb22dfac39fb819cc4f76598'
+amount_to_send = 0.008
+txid_to_spend = '0642841ce707a2d59274bc415ca043c2498cf1cfbdd4b554048dea5b88a66ad2'
 utxo_index = 0  # UTXO index among transaction outputs
 
 ######################################################################
@@ -85,4 +85,33 @@ response = send_from_P2PKH_transaction(
 # %%
 print(response.text)
 # %%
-# Transaction hash 7294dae72803755fe7e9362d1c831edc8efea1dd13baab7f69fa409f661a2d8b
+# Transaction hash {
+# "tx": {
+#     "block_height": -1,
+#     "block_index": -1,
+#     "hash": "2640675e03bb08c8b7cee585b6dd1ecc0ad238b1fe3a674b7a6af870a5322db5",
+#     "addresses": [
+#         "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
+#     ],
+#     "total": 1600000,
+#     "fees": 54487,
+#     "size": 209,
+#     "vsize": 209,
+#     "preference": "high",
+#     "relayed_by": "178.62.251.62",
+#     "received": "2023-05-26T17:00:44.50915564Z",
+#     "ver": 1,
+#     "double_spend": false,
+#     "vin_sz": 1,
+#     "vout_sz": 2,
+#     "confirmations": 0,
+#     "inputs": [
+#         {
+#             "prev_hash": "0642841ce707a2d59274bc415ca043c2498cf1cfbdd4b554048dea5b88a66ad2",
+#             "output_index": 0,
+#             "script": "47304402205572027969c05068b74f2891e377d9e6463cad0325158f8f530e261d1e44b0d50220448d65b615b0b3d7337517e485078777ee38177db026159bb9c81c826168c0030141042cd52601aa227cc1c7987a975bcc2782aa7a67f1667828b6019cecc64cee654e0b81378a2a66c55bc62d96e1d46d7b94d8532d7722ff6164a6b259285b739680",
+#             ...
+#         }
+#     ]
+# }
+# }

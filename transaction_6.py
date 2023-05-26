@@ -33,12 +33,12 @@ def scriptsigKey(prime_2, prime_1):
 
 def send_from_P2PKH_transaction(amount_to_send, txid_to_spend, utxo_index,
                                 ):
-    sub = (11 - 7).to_bytes(1, 'big')
-    sum = (11 + 7).to_bytes(1, 'big')
+    sub = (11 - 7).to_bytes(1, 'little')
+    sum = (11 + 7).to_bytes(1, 'little')
     prime_2 = 11
     prime_1 = 7
-    prime_2 = prime_2.to_bytes(1, 'big')
-    prime_1 = prime_1.to_bytes(1, 'big')
+    prime_2 = prime_2.to_bytes(1, 'little')
+    prime_1 = prime_1.to_bytes(1, 'little')
     txout_scriptPubKey = PWPKH_scriptPubKey(my_public_key)
     txin = create_txin(txid_to_spend, utxo_index)
     txin_scriptPubKey = scriptPubkey(sum,sub)
@@ -72,29 +72,29 @@ print(response.text)
 
 # %%
 
-{
-    "tx": {
-        "block_height": -1,
-        "block_index": -1,
-        "hash": "0feadbf50a1fbe15196ce6755649c0d4d072ad351a27152d20ba46c63b637280",
-        "addresses": [
-            "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
-        ],
-        "total": 1023,
-        "fees": 1000,
-        "size": 89,
-        "vsize": 89,
-        "preference": "low",
-        "relayed_by": "5.117.195.137",
-        "received": "2023-05-26T08:00:45.51113442Z",
-        "ver": 1,
-        "double_spend": False,
-        "vin_sz": 1,
-        "vout_sz": 1,
-        "confirmations": 0,
-        "inputs": [
-            ...]
-        }
+# {
+#     "tx": {
+#         "block_height": -1,
+#         "block_index": -1,
+#         "hash": "0feadbf50a1fbe15196ce6755649c0d4d072ad351a27152d20ba46c63b637280",
+#         "addresses": [
+#             "n1MUqSwtPqh94i6cpq92HE49MC2TzZpKsz"
+#         ],
+#         "total": 1023,
+#         "fees": 1000,
+#         "size": 89,
+#         "vsize": 89,
+#         "preference": "low",
+#         "relayed_by": "5.117.195.137",
+#         "received": "2023-05-26T08:00:45.51113442Z",
+#         "ver": 1,
+#         "double_spend": False,
+#         "vin_sz": 1,
+#         "vout_sz": 1,
+#         "confirmations": 0,
+#         "inputs": [
+#             ...]
+#         }
     
-}
+# }
 
